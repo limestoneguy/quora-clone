@@ -1,4 +1,10 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
 
-class HomePage extends Reac
-export default App;
+class HomePage extends React.Component {
+	render() {
+		return <Navbar />;
+	}
+}
+
+export default HomePage;
