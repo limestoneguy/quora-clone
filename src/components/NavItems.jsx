@@ -1,11 +1,24 @@
-import React from 'react';
+import React from "react";
 
 function NavItems(props) {
-	return (
-		<div className="NavItems">
-			<a href="#">{props.name}</a>
-		</div>
-	);
+  let Style;
+  if (props.props.isSelected) {
+    Style = {
+      color: "#b92b27",
+      fontWeight: 500,
+      borderBottom: "2px solid #b92b27"
+    };
+  }
+  return (
+    <div
+      onClick={() => props.props.fromChildToParentCallback(props.props.name)}
+      className="NavItems"
+    >
+      <a href="#" style={Style}>
+        {props.props.name}
+      </a>
+    </div>
+  );
 }
 
 export default NavItems;

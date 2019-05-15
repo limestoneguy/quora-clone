@@ -1,10 +1,9 @@
-import React from 'react';
-import Navbar from '../components/Navbar';
+import React from "react";
 
 class HomePage extends React.Component {
-	render() {
-		return <Navbar />;
-	}
+  render() {
+    return <div />;
+  }
 }
 
 export default HomePage;
