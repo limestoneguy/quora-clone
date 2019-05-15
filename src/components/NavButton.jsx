@@ -1,7 +1,11 @@
 import React from 'react';
 
 function NavButton(props) {
-	return <button type="button" className="NavButton">{props.text}</button>;
+	return (
+		<div className="NavButton">
+			<button type="button">{props.text}</button>
+		</div>
+	);
 }
 
 export default NavButton;

@@ -6,18 +6,25 @@
 }
 
 .navbar {
-	align-items: center;
 	min-height: 50px;
 	box-shadow: 0px 1px 2px #686868;
 	background-color: #fff;
-	display: flex;
+	display: grid;
+	grid-auto-flow: column;
 	border-bottom: 1px solid #ddd;
 	box-shadow: 0 3px 2px -2px rgba(200, 200, 200, 0.2);
 }
 
 .navLinks {
-	display: flex;
-	align-content: space-around;
+	display: grid;
+	align-content: center;
+	grid-auto-flow: column;
+}
+
+.logo{
+	display: grid;
+	justify-content: center;
+	align-content: center;
 }
 
 .logo img {
@@ -26,18 +33,22 @@
 	color: #b92b27;
 }
 
-.NavItems {
-	margin-left: 10px;
-}
 
-.NavItems a {
+.NavItems {
+}
+.NavItems a{
 	text-decoration: none;
 	color: #666;
 	font-size: 14px;
 }
 
+.SearchBox{
+	display: grid;
+	align-content: center;
+}
+
 .SearchBox input {
-	width: 100%;
+	width: 80%;
 	background: transparent;
 	border: 1px solid #e2e2e2;
 	border-radius: 4px;
@@ -50,19 +61,33 @@
 	color: #666;
 }
 
-.CircleAvatar {
+.CircleAvatar{
+	display: grid;
+	align-content: center;
+}
+
+.CircleAvatar img{
 	width: 26px;
 	height: 26px;
 	border-radius: 50%;
 }
 
-.NavButton {
+.NavButton{
+	display: grid;
+	align-content: center;
+}
+
+.NavButton button{
 	font-size: 14px;
 	height: 30px;
+	width: 55%;
+	box-sizing: border-box;
 	text-align: center;
 	background: #b92b27;
-	padding: 5px;
+	padding: 3px 7px 4px 7px;
+	text-decoration: none;
 	border: 2px #b92b27;
+	white-space: nowrap;
 	border-radius: 3px;
 	color: white;
 }
