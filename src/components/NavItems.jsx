@@ -4,9 +4,9 @@ function NavItems(props) {
   let Style;
   if (props.props.isSelected) {
     Style = {
-      color: "#b92b27",
+      color: "#cf001b",
       fontWeight: 500,
-      borderBottom: "2px solid #b92b27"
+      borderBottom: "2px solid #cf001b"
     };
   }
   return (

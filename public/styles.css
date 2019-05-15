@@ -1,96 +1,111 @@
 * {
-  font-family: Helvetica, Arial, sans-serif;
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	letter-spacing: 1px;
 }
 
 .navbar {
-  min-height: 50px;
-  box-shadow: 0px 1px 2px #686868;
-  background-color: #fff;
-  display: grid;
-  grid-auto-flow: column;
-  border-bottom: 1px solid #ddd;
-  box-shadow: 0 3px 2px -2px rgba(200, 200, 200, 0.2);
+	min-height: 50px;
+	box-shadow: 0px 1px 2px #686868;
+	background-color: #fff;
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 1fr 2fr 1fr 40px 0.7fr;
+	border-bottom: 1px solid #ddd;
+	box-shadow: 0 3px 2px -2px rgba(200, 200, 200, 0.2);
 }
 
 .navLinks {
-  display: grid;
-  align-content: center;
-  grid-auto-flow: column;
+	/* background-color: aqua; */
+	display: grid;
+	align-content: center;
+	grid-auto-flow: column;
 }
 
 .logo {
-  display: grid;
-  justify-content: center;
-  align-content: center;
+	/* background-color: blueviolet; */
+	margin-left: 8px;
+	margin-right: 8px;
+	display: grid;
+	justify-content: center;
+	align-content: center;
 }
 
 .logo img {
-  height: 50px;
-  width: 80px;
-  color: #b92b27;
+	height: 50px;
+	width: 80px;
+	color: #cf001b;
 }
 
 .NavItems a {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  height: 50px;
-  text-decoration: none;
-  text-align: center;
-  color: #666;
-  font-size: 14px;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	height: 50px;
+	text-decoration: none;
+	text-align: center;
+	color: #666;
+	font-size: 14px;
+}
+
+.NavItems:hover {
+	background-color: rgba(200, 200, 200, 0.2);
 }
 
 .SearchBox {
-  display: grid;
-  align-content: center;
+	/* background-color: cornflowerblue; */
+	display: grid;
+	align-content: center;
+	justify-content: center;
 }
 
 .SearchBox input {
-  width: 80%;
-  background: transparent;
-  border: 1px solid #e2e2e2;
-  border-radius: 4px;
-  background: url(//qsf.fs.quoracdn.net/-3-images.new_grid.QuoraSearch.png-26-86c32b1ac26e4161.png)
-    no-repeat 8px center;
-  padding-left: 26px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  background-size: 13px;
-  color: #666;
+	background: transparent;
+	border: 1px solid #e2e2e2;
+	border-radius: 4px;
+	background: url(//qsf.fs.quoracdn.net/-3-images.new_grid.QuoraSearch.png-26-86c32b1ac26e4161.png) no-repeat 8px
+		center;
+	padding-left: 26px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background-size: 13px;
+	color: #666;
 }
 
 .CircleAvatar {
-  width: 26px;
-  display: grid;
-  align-content: center;
+	display: grid;
+	justify-content: center;
+	/* background-color: chocolate; */
+	display: grid;
+	align-content: center;
 }
 
 .CircleAvatar img {
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
 }
 
 .NavButton {
-  display: grid;
-  align-content: center;
+	/* background-color: aqua; */
+	margin: 8px;
+	display: grid;
+	align-content: center;
+	justify-content: center;
 }
 
 .NavButton button {
-  font-size: 14px;
-  height: 30px;
-  width: 55%;
-  box-sizing: border-box;
-  text-align: center;
-  background: #b92b27;
-  padding: 3px 7px 4px 7px;
-  text-decoration: none;
-  border: 2px #b92b27;
-  white-space: nowrap;
-  border-radius: 3px;
-  color: white;
+	font-size: 14px;
+	height: 30px;
+	box-sizing: border-box;
+	text-align: center;
+	background: #cf001b;
+	padding: 3px 7px 4px 7px;
+	text-decoration: none;
+	border: 2px #cf001b;
+	white-space: nowrap;
+	border-radius: 3px;
+	color: white;
 }
